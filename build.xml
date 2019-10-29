@@ -6,6 +6,7 @@
   <property name="src" location="src"/>
   <property name="build" location="build"/>
   <property name="dist" location="dist"/>
+  <property name="src.test.dir" value="${basedir}/src/test"/>
 
   <target name="init">
     <!-- Create the time stamp -->
@@ -28,7 +29,9 @@
   </target>
 
  <target name="test">
-
+	 <junitlauncher>
+		 <test name="NumbersTest" />
+	 </junitlauncher>
  </target>
 </project>
 

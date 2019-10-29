@@ -42,4 +42,15 @@ class NumbersTest {
         assertFalse(number);
     }
 
+    @Test
+    public void sumTwoPositiveNumbers(){
+        int sum = Numbers.sum(1,2);
+        assertEquals(3,sum);
+    }
+
+    @Test
+    public void sumTwoNegativeNumbers(){
+        int sum = Numbers.sum(-1,-4);
+        assertEquals(-5, sum);
+    }
 }
