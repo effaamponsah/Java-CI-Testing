@@ -6,7 +6,7 @@ public class Numbers {
         return num1+num2;
     }
 
-    private static boolean isPositive(int number) {
+    public static boolean isPositive(int number) {
         if (number > 0){
             return true;
         }
@@ -15,7 +15,7 @@ public class Numbers {
         }
     }
 
-    private static  boolean isNegative(int number){
+    public static  boolean isNegative(int number){
         if ( number < 0 ) {
             return true;
         }
@@ -24,7 +24,7 @@ public class Numbers {
         }
     }
 
-    private static boolean isEvenOrGreaterThanZero(int number){
+    public static boolean isEvenOrGreaterThanZero(int number){
         if ( number > 0 && number %2 ==0  ) {
             return true;
         }
@@ -33,7 +33,7 @@ public class Numbers {
         }
     }
 
-    private static  boolean isALeapYear(){
+    public static  boolean isALeapYear(){
         return false;
     }
 }
