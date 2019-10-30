@@ -7,7 +7,7 @@
         <delete dir="build"/>
     </target>
 
-    <target name="compile">
+    <target name="compile" depends="init">
         <mkdir dir="build/classes"/>
         <javac srcdir="src" destdir="build/classes"/>
     </target>
@@ -21,8 +21,6 @@
         </jar>
     </target>
 
-    <target name="run">
-        <java jar="build/jar/HelloWorld.jar" fork="true"/>
-    </target>
+
 
 </project>
